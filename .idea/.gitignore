@@ -1,2 +1,24 @@
-# Default ignored files
-/workspace.xml
+.gradle
+/build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
+
+java-example/build.gradle
+java-example/build/
+java-example/gradle/
+java-example/gradlew
+java-example/gradlew.bat
+java-example/settings.gradle
+.idea/
+*.iml
+/Selenium/src/test/java/xMaths.java
