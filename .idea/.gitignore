@@ -22,3 +22,5 @@ java-example/settings.gradle
 .idea/
 *.iml
 /Selenium/src/test/java/xMaths.java
+# Default ignored files
+/workspace.xml
