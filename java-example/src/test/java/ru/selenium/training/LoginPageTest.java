@@ -30,7 +30,7 @@ public class LoginPageTest {
     @Test
     public void LoginTest() {
         //открываем Login Page
-        driver.get("http://localhost/litecart/admin/login.php?redirect_url=%2Flitecart%2Fadmin%2F");
+        driver.get("http://localhost:8090/litecart/admin/login.php?redirect_url=%2Flitecart%2Fadmin%2F");
         //ищем поле Login и вводим логин пользователя
         driver.findElement(By.xpath("/html/body/div[@id='box-login-wrapper']/div[@id='box-login']/form/div[@class='content']/div[@class='form-group'][1]/div[@class='input-group']/input[@class='form-control']")).sendKeys("admin");
         //ищем поле Password и вводим пароль пользователя
@@ -44,9 +44,6 @@ public class LoginPageTest {
         //проверяем, что пользователь разлогинился - по кнопки Login
         wait.until(visibilityOfElementLocated(By.xpath("/html/body/div[2]/div/form/div[2]/button")));
        }
-
-
-
 
     @After
     public void stop(){
